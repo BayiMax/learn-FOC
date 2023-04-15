@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2023
  *
  */
-#include "U_I2C.h"
+#include "u_i2c.h"
 #include "main.h"
 
 #include "sdkconfig.h"

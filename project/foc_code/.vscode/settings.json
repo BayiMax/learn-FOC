@@ -56,7 +56,11 @@
     "u_i2c.h": "c",
     "sdkconfig.h": "c",
     "ledc.h": "c",
-    "u_pwm.h": "c"
+    "u_pwm.h": "c",
+    "type_traits": "c",
+    "adc.h": "c",
+    "esp_adc_cal.h": "c",
+    "u_adc.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.configureOnOpen": false

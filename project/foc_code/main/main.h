@@ -45,6 +45,8 @@
 #include "driver/gpio.h"
 #include "driver/i2c.h"
 #include "driver/ledc.h"
+#include "driver/adc.h"
+#include "esp_adc_cal.h"
 /*drive*/
 /*user*/
 #include "foc_init.h"
@@ -58,6 +60,7 @@
 
 /*任务优先级划分*/
 #define Priority_AS5600 3
+#define Priority_LED 10
 /*任务优先级划分*/
 
 #endif /* _MAIN_H */

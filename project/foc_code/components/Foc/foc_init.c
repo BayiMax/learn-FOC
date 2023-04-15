@@ -38,10 +38,24 @@
 #include "foc_init.h"
 #include "main.h"
 
+typedef struct foc
+{
+  /* data */
+} _FOC_CONTROL;
+
+_FOC_CONTROL myfoc;
+
 /**
  * @brief
  *
  */
 void foc_init(void)
+{
+}
+
+static void Park(void)
+{
+}
+static void ipark(void)
 {
 }
