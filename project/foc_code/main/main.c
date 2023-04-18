@@ -83,8 +83,8 @@ void app_main(void)
     while (1)
     {
         vTaskDelay(10 / portTICK_RATE_MS);
-        // sprintf(InfoBuffer, "AS5600 Angel=%.4f", my_as5600.Raw_angel);
-        // MY_DEBUG("%s", InfoBuffer);
+        sprintf(InfoBuffer, "AS5600 Angel=%.4f", my_as5600.Raw_angel);
+        MY_DEBUG("%s", InfoBuffer);
         // sprintf(InfoBuffer, "ADC 1 =%.4f", myadc.Get_adc1());
         // MY_DEBUG("%s", InfoBuffer);
         // sprintf(InfoBuffer, "ADC 2 =%.4f", myadc.Get_adc2());

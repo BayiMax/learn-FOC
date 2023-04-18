@@ -1,0 +1,3 @@
+C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_test/foc_c++_test/cmake-build-debug/CMakeFiles/foc_test.dir
+C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_test/foc_c++_test/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_test/foc_c++_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+# ninja log v5
+0	135	7035021094539820	build.ninja	4ec4e8650bda091a
+4	375	7035019191739890	CMakeFiles/foc_test.dir/main.cpp.obj	8c50bbda7bf4f329
+376	510	7035019193057058	foc_test.exe	9c88e858b775ba6f
+4	430	7035021259866376	CMakeFiles/foc_test.dir/main.cpp.obj	170c62c980685b06
+432	629	7035021261790158	foc_test.exe	9c88e858b775ba6f
