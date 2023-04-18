@@ -6,7 +6,7 @@ int main() {
     int x = 0;
     std::ofstream fout("test_foc.csv");
     fout << 'n' << ',' << 'A' << ',' << 'B' << ',' << 'C' << '\n';
-    for (double theta = 0; theta < 10; theta += 1e-3) {
+    for (double theta = 0; theta < 20; theta += 1e-3) {
         foc.u_d = 0.1;
         foc.u_q = 0;
         foc.theta = theta;
