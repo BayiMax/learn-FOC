@@ -23,6 +23,8 @@
  *
  */
 
+// #include <iostream>
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,7 +37,7 @@
 #include "freertos/event_groups.h"
 #include "freertos/task.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
+#include "spi_flash_mmap.h"
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include "esp_event.h"
@@ -45,11 +47,11 @@
 #include "driver/gpio.h"
 #include "driver/i2c.h"
 #include "driver/ledc.h"
-#include "driver/adc.h"
-#include "esp_adc_cal.h"
+#include "esp_adc/adc_oneshot.h"
+#include "esp_adc/adc_continuous.h"
 /*drive*/
 /*user*/
-#include "foc_init.h"
+#include "foc.h"
 /*user*/
 
 /**

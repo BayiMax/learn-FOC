@@ -1,24 +1,16 @@
 {
     "configurations": [
         {
-            "name": "esp32s3",
-            "compilerPath": "D:\\esp32IDF\\IDFCORE\\IDF\\Espressif\\tools\\xtensa-esp32s3-elf\\esp-2021r2-patch3-8.4.0\\xtensa-esp32s3-elf\\bin\\xtensa-esp32s3-elf-gcc.exe",
-            "cStandard": "c11",
+            "name": "esp32c3",
+            "compilerPath": "D:/esp32IDF/core_501/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc.exe",
+            "cStandard": "c17",
             "cppStandard": "c++17",
             "includePath": [
-                "${config:idf.espIdfPathWin}/components/**",
-                "${config:idf.espIdfPathWin}/components/freertos/include/freertos/**",
-                "${config:idf.espAdfPath}/components/**",
-                "${config:idf.espAdfPathWin}/components/**",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**" //工作区下
             ],
             "browse": {
                 "path": [
-                    "${config:idf.espIdfPathWin}/components/**",
-                    "${config:idf.espIdfPathWin}/components/freertos/include/freertos/**",
-                    "${config:idf.espAdfPath}/components/**",
-                    "${config:idf.espAdfPathWin}/components/**",
-                    "${workspaceFolder}"
+                    "${workspaceFolder}" //工作区
                 ],
                 "limitSymbolsToIncludedHeaders": false
             },

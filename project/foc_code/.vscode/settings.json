@@ -60,7 +60,15 @@
     "type_traits": "c",
     "adc.h": "c",
     "esp_adc_cal.h": "c",
-    "u_adc.h": "c"
+    "u_adc.h": "c",
+    "cmath": "cpp",
+    "cstdint": "cpp",
+    "iostream": "cpp",
+    "stdbool.h": "c",
+    "istream": "cpp",
+    "u_led.h": "c",
+    "esp_system.h": "c",
+    "spi_flash_mmap.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.configureOnOpen": false

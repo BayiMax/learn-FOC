@@ -1,7 +1,5 @@
-set(component_srcs 	"Foc_init.c" "AS5600.c")
-
+set(component_srcs 	 "AS5600.c")
+# "foc.cpp"
 idf_component_register(SRCS "${component_srcs}"
                        INCLUDE_DIRS "include"
-                       PRIV_INCLUDE_DIRS ""
-                       PRIV_REQUIRES "driver" "main"
-                       REQUIRES "")
+                       )

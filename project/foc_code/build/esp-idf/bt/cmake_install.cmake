@@ -1,4 +1,4 @@
-# Install script for directory: D:/esp32IDF/IDFCORE/IDF/Espressif/frameworks/esp-idf-v4.4.1/components/bt
+# Install script for directory: D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/esp32IDF/IDFCORE/IDF/Espressif/tools/riscv32-esp-elf/esp-2021r2-patch3-8.4.0/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
 endif()
 

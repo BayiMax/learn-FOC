@@ -22,7 +22,7 @@ plt.xlabel(u'x', size=10)
 # 设置x轴标签旋转角度和字体大小
 plt.xticks(rotation=10, fontsize=8)
 plt.ylabel(u'out', size=10)
-plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1000))  # 设置横坐标间隔（每隔80个横坐标显示一个横坐标，解决横坐标显示重叠问题）
+plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(5000))  # 设置横坐标间隔（每隔80个横坐标显示一个横坐标，解决横坐标显示重叠问题）
 plt.axhline(y=0.5, ls=":", c="gray")  # 添加水平辅助线
 plt.axhline(y=0.55, ls=":", c="gray")  # 添加水平辅助线
 plt.axhline(y=0.45, ls=":", c="gray")  # 添加水平辅助线

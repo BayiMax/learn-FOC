@@ -1,0 +1,5 @@
+[0/1] Re-running CMake...
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code -BC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build
