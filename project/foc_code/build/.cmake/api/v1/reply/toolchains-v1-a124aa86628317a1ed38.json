@@ -1,0 +1,129 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : {},
+				"path" : "D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
+				"version" : ""
+			},
+			"language" : "ASM",
+			"sourceFileExtensions" : 
+			[
+				"s",
+				"S",
+				"asm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/include",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/include-fixed",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/sys-include",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/include"
+					],
+					"linkDirectories" : 
+					[
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/rv32imc/ilp32",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/lib/rv32imc/ilp32",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"c",
+						"nosys",
+						"c",
+						"gcc",
+						"gcc",
+						"c",
+						"nosys"
+					]
+				},
+				"path" : "D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/include/c++/11.2.0",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/include/c++/11.2.0/riscv32-esp-elf/rv32imc/ilp32",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/include/c++/11.2.0/backward",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/include",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/include-fixed",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/sys-include",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/include"
+					],
+					"linkDirectories" : 
+					[
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0/rv32imc/ilp32",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/lib/rv32imc/ilp32",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/11.2.0",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/lib/gcc",
+						"D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/riscv32-esp-elf/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc",
+						"c",
+						"nosys",
+						"c",
+						"gcc",
+						"gcc",
+						"c",
+						"nosys"
+					]
+				},
+				"path" : "D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

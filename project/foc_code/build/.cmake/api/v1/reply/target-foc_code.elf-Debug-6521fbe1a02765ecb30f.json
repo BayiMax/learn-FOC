@@ -1,0 +1,3745 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "foc_code.elf"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"project",
+			"target_link_libraries",
+			"set_property",
+			"idf_build_executable",
+			"target_linker_script",
+			"include",
+			"rom_linker_script",
+			"add_dependencies",
+			"__ldgen_process_template"
+		],
+		"files" : 
+		[
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/tools/cmake/project.cmake",
+			"CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/tools/cmake/build.cmake",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/app_trace/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mbedtls/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_wifi/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_app_format/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/pthread/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/tools/cmake/utilities.cmake",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/ld/ld.cmake",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/hal/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/newlib/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/cxx/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_phy/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/vfs/CMakeLists.txt",
+			"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/tools/cmake/ldgen.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 486,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 527,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 566,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 616,
+				"parent" : 65
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 63,
+				"parent" : 67
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 263,
+				"parent" : 69
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 57,
+				"parent" : 71
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 7,
+				"parent" : 80
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 21,
+				"parent" : 82
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 60,
+				"parent" : 84
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 72,
+				"parent" : 84
+			},
+			{
+				"file" : 10,
+				"parent" : 86
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 12,
+				"parent" : 87
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 163,
+				"parent" : 88
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 88
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 18,
+				"parent" : 87
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 91
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 82,
+				"parent" : 84
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 70,
+				"parent" : 94
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 163,
+				"parent" : 95
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 95
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 71,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 58,
+				"parent" : 98
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 99
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 73,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 58,
+				"parent" : 101
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 102
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 174,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 58,
+				"parent" : 104
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 105
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 175,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 58,
+				"parent" : 107
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 108
+			},
+			{
+				"command" : 7,
+				"file" : 11,
+				"line" : 190,
+				"parent" : 94
+			},
+			{
+				"command" : 5,
+				"file" : 11,
+				"line" : 58,
+				"parent" : 110
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 111
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 184,
+				"parent" : 113
+			},
+			{
+				"file" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 9,
+				"parent" : 115
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 163,
+				"parent" : 116
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 166,
+				"parent" : 116
+			},
+			{
+				"file" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 14,
+				"line" : 151,
+				"parent" : 119
+			},
+			{
+				"command" : 2,
+				"file" : 14,
+				"line" : 152,
+				"parent" : 119
+			},
+			{
+				"command" : 2,
+				"file" : 14,
+				"line" : 172,
+				"parent" : 119
+			},
+			{
+				"file" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 15,
+				"line" : 39,
+				"parent" : 123
+			},
+			{
+				"command" : 2,
+				"file" : 15,
+				"line" : 49,
+				"parent" : 123
+			},
+			{
+				"file" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 44,
+				"parent" : 126
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 43,
+				"parent" : 126
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 53,
+				"parent" : 126
+			},
+			{
+				"command" : 2,
+				"file" : 16,
+				"line" : 56,
+				"parent" : 126
+			},
+			{
+				"file" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 48,
+				"parent" : 131
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 52,
+				"parent" : 131
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 55,
+				"parent" : 131
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 72,
+				"parent" : 131
+			},
+			{
+				"command" : 2,
+				"file" : 17,
+				"line" : 73,
+				"parent" : 131
+			},
+			{
+				"file" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 18,
+				"line" : 20,
+				"parent" : 137
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 42,
+				"parent" : 71
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 487,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 148,
+				"parent" : 91
+			},
+			{
+				"command" : 8,
+				"file" : 19,
+				"line" : 78,
+				"parent" : 141
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-march=rv32imc  -g -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 36,
+					"define" : "UNITY_INCLUDE_CONFIG_H"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/riscv/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/config"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos/esp_additions/include/freertos"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/portable/riscv/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support/include/soc/esp32c3"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support/port/esp32c3/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support/port/esp32c3/private_include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/heap/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/log/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/esp32c3/."
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/esp32c3/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/hal/esp32c3/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/hal/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/include/esp32c3"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_common/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/port/include/riscv"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/lwip/port/esp32/include/arch"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/efuse/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/efuse/esp32c3/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/driver/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/driver/deprecated"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mbedtls/mbedtls/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mbedtls/mbedtls/library"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mbedtls/esp_crt_bundle/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_app_format/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader_support/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader_support/bootloader_flash/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/app_update/include"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/spi_flash/include"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/pthread/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/app_trace/include"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_event/include"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_phy/include"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_phy/esp32c3/include"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/vfs/include"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/wpa_supplicant/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/wpa_supplicant/port/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/wpa_supplicant/esp_supplicant/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/unity/include"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/unity/unity/src"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/cmock/CMock/src"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/console"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/http_parser"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp-tls"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp-tls/esp-tls-crypto"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_adc/include"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_adc/interface"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_adc/esp32c3/include"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_adc/deprecated/include"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_gdbstub/include"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_gdbstub/riscv"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_gdbstub/esp32c3"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hid/include"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/tcp_transport/include"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_http_client/include"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_http_server/include"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_https_ota/include"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_lcd/include"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_lcd/interface"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/protobuf-c/protobuf-c"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/protocomm/include/common"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/protocomm/include/security"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/protocomm/include/transports"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_local_ctrl/include"
+				},
+				{
+					"backtrace" : 143,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_psram/include"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/espcoredump/include"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/espcoredump/include/port/riscv"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/wear_levelling/include"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/sdmmc/include"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/fatfs/diskio"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/fatfs/vfs"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/fatfs/src"
+				},
+				{
+					"backtrace" : 144,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/idf_test/include"
+				},
+				{
+					"backtrace" : 144,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/idf_test/include/esp32c3"
+				},
+				{
+					"backtrace" : 145,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/ieee802154/include"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/json/cJSON"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/mqtt/esp-mqtt/include"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/spiffs/include"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/wifi_provisioning/include"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/main/include"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/examples/cxx/experimental/experimental_cpp_component/include"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/components/peripheral/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 140,
+			"id" : "_project_elf_src::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "__idf_riscv::@5eeb1a2ca709d020776e"
+		},
+		{
+			"backtrace" : 142,
+			"id" : "__ldgen_output_sections.ld::@874df54e61e20112dfd4"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "__idf_unity::@fec746937506b5690992"
+		},
+		{
+			"backtrace" : 38,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
+			"backtrace" : 44,
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
+		},
+		{
+			"backtrace" : 49,
+			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
+		},
+		{
+			"backtrace" : 50,
+			"id" : "__idf_protobuf-c::@b14513c4bd859268ec22"
+		},
+		{
+			"backtrace" : 51,
+			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
+		},
+		{
+			"backtrace" : 52,
+			"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef"
+		},
+		{
+			"backtrace" : 53,
+			"id" : "__idf_espcoredump::@718b9a7d55ab42cfc0a3"
+		},
+		{
+			"backtrace" : 56,
+			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
+		},
+		{
+			"backtrace" : 55,
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"backtrace" : 54,
+			"id" : "__idf_wear_levelling::@cb21b0d7c0815cff11c6"
+		},
+		{
+			"backtrace" : 57,
+			"id" : "__idf_json::@c78a8bdc820334f01148"
+		},
+		{
+			"backtrace" : 58,
+			"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56"
+		},
+		{
+			"backtrace" : 59,
+			"id" : "__idf_spiffs::@df881b71474064c86689"
+		},
+		{
+			"backtrace" : 60,
+			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "__idf_main::@7368607ed66887415643"
+		},
+		{
+			"backtrace" : 61,
+			"id" : "__idf_experimental_cpp_component::@d61c6dbaae25750b3ce4"
+		}
+	],
+	"id" : "foc_code.elf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-march=rv32imc  -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-nostartfiles -march=rv32imc --specs=nosys.specs",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "esp-idf\\app_trace\\libapp_trace.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "esp-idf\\unity\\libunity.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "esp-idf\\cmock\\libcmock.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "esp-idf\\console\\libconsole.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "esp-idf\\esp_hid\\libesp_hid.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "esp-idf\\esp_lcd\\libesp_lcd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "esp-idf\\protobuf-c\\libprotobuf-c.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "esp-idf\\protocomm\\libprotocomm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "esp-idf\\esp_local_ctrl\\libesp_local_ctrl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "esp-idf\\espcoredump\\libespcoredump.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 54,
+				"fragment" : "esp-idf\\wear_levelling\\libwear_levelling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "esp-idf\\sdmmc\\libsdmmc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "esp-idf\\fatfs\\libfatfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 57,
+				"fragment" : "esp-idf\\json\\libjson.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "esp-idf\\mqtt\\libmqtt.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "esp-idf\\spiffs\\libspiffs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "esp-idf\\wifi_provisioning\\libwifi_provisioning.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "esp-idf\\main\\libmain.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 62,
+				"fragment" : "esp-idf\\experimental_cpp_component\\libexperimental_cpp_component.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 63,
+				"fragment" : "esp-idf\\peripheral\\libperipheral.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "-Wl,--cref",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "-Wl,--defsym=IDF_TARGET_ESP32C3=0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 64,
+				"fragment" : "-Wl,--Map=\"C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/foc_code.map\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "-fno-rtti",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "-fno-lto",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "-Wl,--warn-common",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 61,
+				"fragment" : "esp-idf\\main\\libmain.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 63,
+				"fragment" : "esp-idf\\peripheral\\libperipheral.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "esp-idf\\app_trace\\libapp_trace.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "esp-idf\\app_trace\\libapp_trace.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "-lgcov",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "esp-idf\\app_trace\\libapp_trace.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 68,
+				"fragment" : "-lgcov",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "esp-idf\\cmock\\libcmock.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "esp-idf\\unity\\libunity.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "esp-idf\\esp_hid\\libesp_hid.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "esp-idf\\esp_lcd\\libesp_lcd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 52,
+				"fragment" : "esp-idf\\esp_local_ctrl\\libesp_local_ctrl.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 53,
+				"fragment" : "esp-idf\\espcoredump\\libespcoredump.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "esp-idf\\fatfs\\libfatfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 54,
+				"fragment" : "esp-idf\\wear_levelling\\libwear_levelling.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 55,
+				"fragment" : "esp-idf\\sdmmc\\libsdmmc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 58,
+				"fragment" : "esp-idf\\mqtt\\libmqtt.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "esp-idf\\spiffs\\libspiffs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "esp-idf\\wifi_provisioning\\libwifi_provisioning.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "esp-idf\\protocomm\\libprotocomm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "esp-idf\\console\\libconsole.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 50,
+				"fragment" : "esp-idf\\protobuf-c\\libprotobuf-c.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 57,
+				"fragment" : "esp-idf\\json\\libjson.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 62,
+				"fragment" : "esp-idf\\experimental_cpp_component\\libexperimental_cpp_component.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "esp-idf\\riscv\\libriscv.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "esp-idf\\esp_ringbuf\\libesp_ringbuf.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "esp-idf\\efuse\\libefuse.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "esp-idf\\driver\\libdriver.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "esp-idf\\esp_pm\\libesp_pm.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "esp-idf\\mbedtls\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "esp-idf\\esp_app_format\\libesp_app_format.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "esp-idf\\bootloader_support\\libbootloader_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "esp-idf\\esp_partition\\libesp_partition.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "esp-idf\\app_update\\libapp_update.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "esp-idf\\spi_flash\\libspi_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "esp-idf\\esp_system\\libesp_system.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "esp-idf\\esp_rom\\libesp_rom.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "esp-idf\\hal\\libhal.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "esp-idf\\log\\liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "esp-idf\\heap\\libheap.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "esp-idf\\soc\\libsoc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "esp-idf\\esp_hw_support\\libesp_hw_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "esp-idf\\freertos\\libfreertos.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "esp-idf\\esp_common\\libesp_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "esp-idf\\esp_timer\\libesp_timer.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "esp-idf\\esp_event\\libesp_event.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "esp-idf\\nvs_flash\\libnvs_flash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "esp-idf\\vfs\\libvfs.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "esp-idf\\lwip\\liblwip.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "esp-idf\\esp_netif\\libesp_netif.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "esp-idf\\wpa_supplicant\\libwpa_supplicant.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "esp-idf\\esp_wifi\\libesp_wifi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 39,
+				"fragment" : "esp-idf\\http_parser\\libhttp_parser.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "esp-idf\\esp-tls\\libesp-tls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 41,
+				"fragment" : "esp-idf\\esp_adc\\libesp_adc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "esp-idf\\esp_eth\\libesp_eth.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "esp-idf\\esp_gdbstub\\libesp_gdbstub.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "esp-idf\\tcp_transport\\libtcp_transport.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 46,
+				"fragment" : "esp-idf\\esp_http_client\\libesp_http_client.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 47,
+				"fragment" : "esp-idf\\esp_http_server\\libesp_http_server.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "esp-idf\\esp_https_ota\\libesp_https_ota.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedtls.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedcrypto.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "esp-idf\\mbedtls\\mbedtls\\library\\libmbedx509.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 72,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcoexist.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 73,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 74,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libespnow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libmesh.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 76,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libnet80211.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 77,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libpp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libsmartconfig.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 79,
+				"fragment" : "D:\\esp32IDF\\core_501\\frameworks\\esp-idf-v5.0.1\\components\\esp_wifi\\lib\\esp32c3\\libwapi.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 81,
+				"fragment" : "-u esp_app_desc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "-u pthread_include_pthread_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "-u pthread_include_pthread_cond_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "-u pthread_include_pthread_local_storage_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 83,
+				"fragment" : "-u pthread_include_pthread_rwlock_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 85,
+				"fragment" : "-u start_app",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 89,
+				"fragment" : "-L \"C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/esp_system/ld\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 90,
+				"fragment" : "-T memory.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 92,
+				"fragment" : "-T sections.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 93,
+				"fragment" : "-u __ubsan_include",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 96,
+				"fragment" : "-L \"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3/ld\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 97,
+				"fragment" : "-T esp32c3.rom.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 100,
+				"fragment" : "-T esp32c3.rom.api.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 103,
+				"fragment" : "-T esp32c3.rom.libgcc.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 106,
+				"fragment" : "-T esp32c3.rom.newlib.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 109,
+				"fragment" : "-T esp32c3.rom.version.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 112,
+				"fragment" : "-T esp32c3.rom.eco3.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 114,
+				"fragment" : "-u __assert_func",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 117,
+				"fragment" : "-L \"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/esp32c3/ld\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 118,
+				"fragment" : "-T esp32c3.peripherals.ld",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 120,
+				"fragment" : "-Wl,--undefined=uxTopUsedPriority",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 121,
+				"fragment" : "-Wl,--undefined=FreeRTOS_openocd_params",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 122,
+				"fragment" : "-u app_main",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 124,
+				"fragment" : "-lc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 124,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 124,
+				"fragment" : "esp-idf\\newlib\\libnewlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 125,
+				"fragment" : "-u newlib_include_heap_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 125,
+				"fragment" : "-u newlib_include_syscalls_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 125,
+				"fragment" : "-u newlib_include_pthread_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 125,
+				"fragment" : "-u newlib_include_assert_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 127,
+				"fragment" : "-u __cxa_guard_dummy",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 128,
+				"fragment" : "-lstdc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 129,
+				"fragment" : "esp-idf\\pthread\\libpthread.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 124,
+				"fragment" : "-lgcc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 130,
+				"fragment" : "esp-idf\\cxx\\libcxx.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 132,
+				"fragment" : "-L \"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_phy/lib/esp32c3\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 133,
+				"fragment" : "-u include_esp_phy_override",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 134,
+				"fragment" : "-lphy",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 135,
+				"fragment" : "-lbtbb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "-lphy",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "-lbtbb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "esp-idf\\esp_phy\\libesp_phy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "-lphy",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 136,
+				"fragment" : "-lbtbb",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 138,
+				"fragment" : "-u vfs_include_syscalls_impl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 139,
+				"fragment" : "-L \"D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_wifi/lib/esp32c3\"",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "foc_code.elf",
+	"nameOnDisk" : "foc_code.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/project_elf_src_esp32c3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/project_elf_src_esp32c3.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

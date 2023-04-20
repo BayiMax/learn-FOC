@@ -1,0 +1,195 @@
+[1/84] Generating project_elf_src_esp32c3.c
+[2/84] Linking C static library esp-idf\esp_https_ota\libesp_https_ota.a
+[3/84] Linking C static library esp-idf\esp_http_server\libesp_http_server.a
+[4/84] Linking C static library esp-idf\esp_http_client\libesp_http_client.a
+[5/84] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[6/84] Linking C static library esp-idf\tcp_transport\libtcp_transport.a
+[7/84] Creating directories for 'bootloader'
+[8/84] No download step for 'bootloader'
+[9/84] Linking C static library esp-idf\esp_gdbstub\libesp_gdbstub.a
+[10/84] No update step for 'bootloader'
+[11/84] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[12/84] No patch step for 'bootloader'
+[13/84] Linking C static library esp-idf\esp_adc\libesp_adc.a
+[14/84] Linking C static library esp-idf\esp-tls\libesp-tls.a
+[15/84] Linking C static library esp-idf\http_parser\libhttp_parser.a
+[16/84] Linking C static library esp-idf\esp_wifi\libesp_wifi.a
+[17/84] Linking C static library esp-idf\wpa_supplicant\libwpa_supplicant.a
+[18/84] Linking C static library esp-idf\esp_netif\libesp_netif.a
+[19/84] Linking C static library esp-idf\lwip\liblwip.a
+[20/84] Linking C static library esp-idf\vfs\libvfs.a
+[21/84] Linking C static library esp-idf\esp_phy\libesp_phy.a
+[22/84] Linking C static library esp-idf\nvs_flash\libnvs_flash.a
+[23/84] Linking C static library esp-idf\esp_event\libesp_event.a
+[24/84] Linking C static library esp-idf\esp_timer\libesp_timer.a
+[25/84] Linking C static library esp-idf\esp_common\libesp_common.a
+[26/84] Linking C static library esp-idf\cxx\libcxx.a
+[27/84] Linking C static library esp-idf\newlib\libnewlib.a
+[28/84] Linking C static library esp-idf\freertos\libfreertos.a
+[29/84] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[30/84] Linking C static library esp-idf\soc\libsoc.a
+[31/84] Linking C static library esp-idf\heap\libheap.a
+[32/84] Linking C static library esp-idf\log\liblog.a
+[33/84] Linking C static library esp-idf\hal\libhal.a
+[34/84] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[35/84] Linking C static library esp-idf\esp_system\libesp_system.a
+[36/84] Linking C static library esp-idf\pthread\libpthread.a
+[37/84] Linking C static library esp-idf\spi_flash\libspi_flash.a
+[38/84] Linking C static library esp-idf\app_update\libapp_update.a
+[39/84] Linking C static library esp-idf\esp_partition\libesp_partition.a
+[40/84] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[41/84] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[42/84] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedtls.a
+[43/84] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedx509.a
+[44/84] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedcrypto.a
+[45/84] Generating x509_crt_bundle
+[46/84] Generating ../../x509_crt_bundle.S
+[47/84] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[48/84] Linking C static library esp-idf\mbedtls\libmbedtls.a
+[49/84] Linking C static library esp-idf\esp_pm\libesp_pm.a
+[50/84] Linking C static library esp-idf\driver\libdriver.a
+[51/84] Linking C static library esp-idf\efuse\libefuse.a
+[52/84] Linking C static library esp-idf\esp_ringbuf\libesp_ringbuf.a
+[53/84] Linking C static library esp-idf\riscv\libriscv.a
+[54/84] Linking C static library esp-idf\app_trace\libapp_trace.a
+[55/84] Linking C static library esp-idf\unity\libunity.a
+[56/84] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[57/84] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[58/84] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[59/84] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[60/84] Linking C static library esp-idf\console\libconsole.a
+[61/84] Linking C static library esp-idf\json\libjson.a
+[62/84] Linking C static library esp-idf\sdmmc\libsdmmc.a
+[63/84] Linking C static library esp-idf\peripheral\libperipheral.a
+[64/84] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[65/84] Linking C static library esp-idf\mqtt\libmqtt.a
+[66/84] Linking C static library esp-idf\spiffs\libspiffs.a
+[67/84] Linking C static library esp-idf\experimental_cpp_component\libexperimental_cpp_component.a
+[68/84] Linking C static library esp-idf\cmock\libcmock.a
+[69/84] Linking C static library esp-idf\fatfs\libfatfs.a
+[70/84] Linking C static library esp-idf\protocomm\libprotocomm.a
+[71/84] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[72/84] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+[73/84] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[74/84] Linking C static library esp-idf\main\libmain.a
+[75/84] Performing configure step for 'bootloader'
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/esp32IDF/core_501/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/sdkconfig
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- App "bootloader" version: v5.0.1-dirty
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader/subproject/main/ld/esp32c3/bootloader.ld
+-- Adding linker script D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader/subproject/main/ld/esp32c3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table riscv soc spi_flash
+-- Component paths: D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader_support D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/efuse D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_app_format D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_common D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_hw_support D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_rom D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esp_system D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esptool_py D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/freertos D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/hal D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/log D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader/subproject/main D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/bootloader/subproject/components/micro-ecc D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/newlib D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/partition_table D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/riscv D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/soc D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/spi_flash
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader
+[76/84] Performing build step for 'bootloader'
+[1/17] Generating project_elf_src_esp32c3.c
+[2/17] Linking C static library esp-idf\log\liblog.a
+[3/17] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32c3.c.obj
+[4/17] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[5/17] Linking C static library esp-idf\esp_common\libesp_common.a
+[6/17] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[7/17] Linking C static library esp-idf\esp_system\libesp_system.a
+[8/17] Linking C static library esp-idf\efuse\libefuse.a
+[9/17] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[10/17] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[11/17] Linking C static library esp-idf\hal\libhal.a
+[12/17] Linking C static library esp-idf\micro-ecc\libmicro-ecc.a
+[13/17] Linking C static library esp-idf\soc\libsoc.a
+[14/17] Linking C static library esp-idf\main\libmain.a
+[15/17] Linking C executable bootloader.elf
+[16/17] Generating binary image from built executable
+esptool.py v4.5
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader/bootloader.bin
+[17/17] cmd.exe /C "cd /D C:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build\bootloader\esp-idf\esptool_py && python D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4ee0 bytes. 0x3120 bytes (38%) free.
+[77/84] No install step for 'bootloader'
+[78/84] Completed 'bootloader'
+[79/84] Generating ld/sections.ld
+[80/84] Building C object CMakeFiles/foc_code.elf.dir/project_elf_src_esp32c3.c.obj
+[81/84] Linking CXX executable foc_code.elf
+[82/84] Generating binary image from built executable
+esptool.py v4.5
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/foc_code.bin
+[83/84] cmd.exe /C "cd /D C:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build\esp-idf\esptool_py && python D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/partition_table/partition-table.bin C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/foc_code.bin"
+foc_code.bin binary size 0x73730 bytes. Smallest app partition is 0x100000 bytes. 0x8c8d0 bytes (55%) free.
+[83/84] cmd.exe /C "cd /D D:\esp32IDF\core_501\frameworks\esp-idf-v5.0.1\components\esptool_py && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -D IDF_PATH=D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1 -D SERIAL_TOOL=python;;D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build -P D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32c3 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 foc_code.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5
+Serial port COM11
+Connecting....
+Chip is ESP32-C3 (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 7c:df:a1:b4:c4:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x00083fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20192 bytes to 12385...
+Writing at 0x00000000... (100 %)
+Wrote 20192 bytes (12385 compressed) at 0x00000000 in 0.7 seconds (effective 215.5 kbit/s)...
+Hash of data verified.
+Compressed 472880 bytes to 225836...
+Writing at 0x00010000... (7 %)
+Writing at 0x0001b111... (14 %)
+Writing at 0x0002968d... (21 %)
+Writing at 0x000326e3... (28 %)
+Writing at 0x00039b52... (35 %)
+Writing at 0x00041051... (42 %)
+Writing at 0x0004a3fa... (50 %)
+Writing at 0x000527c2... (57 %)
+Writing at 0x0005c28e... (64 %)
+Writing at 0x00062aaa... (71 %)
+Writing at 0x000690b6... (78 %)
+Writing at 0x00070154... (85 %)
+Writing at 0x00077726... (92 %)
+Writing at 0x0007db76... (100 %)
+Wrote 472880 bytes (225836 compressed) at 0x00010000 in 7.1 seconds (effective 531.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 263.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

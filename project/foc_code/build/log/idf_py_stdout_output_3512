@@ -1,0 +1,69 @@
+[1/11] Performing build step for 'bootloader'
+[1/2] Generating binary image from built executable
+esptool.py v4.5
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader/bootloader.bin
+[2/2] cmd.exe /C "cd /D C:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build\bootloader\esp-idf\esptool_py && D:\esp32IDF\core_501\python_env\idf5.0_py3.8_env\Scripts\python.exe D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4ee0 bytes. 0x3120 bytes (38%) free.
+[2/10] Completed 'bootloader'
+[3/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[4/10] Linking C static library esp-idf\main\libmain.a
+[5/10] Generating ld/sections.ld
+[6/10] Building C object CMakeFiles/foc_code.elf.dir/project_elf_src_esp32c3.c.obj
+[7/10] Linking CXX executable foc_code.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.5
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/foc_code.bin
+[9/10] cmd.exe /C "cd /D C:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build\esp-idf\esptool_py && D:\esp32IDF\core_501\python_env\idf5.0_py3.8_env\Scripts\python.exe D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/partition_table/partition-table.bin C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/foc_code.bin"
+foc_code.bin binary size 0x73730 bytes. Smallest app partition is 0x100000 bytes. 0x8c8d0 bytes (55%) free.
+[9/10] cmd.exe /C "cd /D D:\esp32IDF\core_501\frameworks\esp-idf-v5.0.1\components\esptool_py && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -D IDF_PATH=D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1 -D SERIAL_TOOL=D:/esp32IDF/core_501/python_env/idf5.0_py3.8_env/Scripts/python.exe;;D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build -P D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32c3 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 foc_code.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5
+Serial port COM11
+Connecting....
+Chip is ESP32-C3 (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 7c:df:a1:b4:c4:80
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x00083fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 20192 bytes to 12385...
+Writing at 0x00000000... (100 %)
+Wrote 20192 bytes (12385 compressed) at 0x00000000 in 0.8 seconds (effective 215.0 kbit/s)...
+Hash of data verified.
+Compressed 472880 bytes to 225847...
+Writing at 0x00010000... (7 %)
+Writing at 0x0001b120... (14 %)
+Writing at 0x0002965d... (21 %)
+Writing at 0x000326dd... (28 %)
+Writing at 0x00039b4a... (35 %)
+Writing at 0x00041046... (42 %)
+Writing at 0x0004a3f1... (50 %)
+Writing at 0x000527b1... (57 %)
+Writing at 0x0005c288... (64 %)
+Writing at 0x00062aa3... (71 %)
+Writing at 0x000690b0... (78 %)
+Writing at 0x0007011a... (85 %)
+Writing at 0x0007771e... (92 %)
+Writing at 0x0007db6c... (100 %)
+Wrote 472880 bytes (225847 compressed) at 0x00010000 in 7.1 seconds (effective 531.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 247.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

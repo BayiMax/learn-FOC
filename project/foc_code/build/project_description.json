@@ -7,7 +7,7 @@
     "bootloader_elf":     "C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/bootloader/bootloader.elf",
     "app_elf":            "foc_code.elf",
     "app_bin":            "foc_code.bin",
-    "git_revision":       "v5.0.1-dirty",
+    "git_revision":       "v5.0.1-1-g96bde5f",
     "target":             "esp32c3",
     "rev":                "",
     "min_rev":            "3",
