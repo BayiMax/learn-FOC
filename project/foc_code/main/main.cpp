@@ -1,67 +1,50 @@
-/**
- * @file app_main.c
- * @author {白秉鑫}-{bbx20010518@outlook.com}
- * @brief
- * @version 0.1
- * @date 2023-03-26
- *
- * @copyright Copyright (c) 2023
- *
- */
+#include <esp_pthread.h>
 #include "main.h"
-
 #include "u_led.h"
 
-#include "u_adc.h"
-
-#include "u_i2c.h"
-#include "u_pwm.h"
-
-#include "AS5600.h"
-
-/*任务句柄定义*/
-TaskHandle_t AS5600_Test_Handle;
-TaskHandle_t LED_Test_Handle;
-/*任务句柄定义*/
-
 /**
- * @brief 初始化
- *
+ * 创建线程
+ * @param name 线程名
+ * @param core_id 线程使用内核ID
+ * @param stack 可用堆栈大小
+ * @param prio 线程优先级
+ * @return
  */
-static void All_init(void)
-{
-    /*驱动初始化*/
-    led_init();
-    adc_init();
-    I2C1_init();
-    Pwm_init();
-    /*驱动初始化*/
-    /*传感器初始化*/
-    AS5600_init();
-    /*传感器初始化*/
-    /*设备初始化*/
-    //    foc_init();
-    /*设备初始化*/
+static esp_pthread_cfg_t create_config(const char *name, int core_id, int stack, int prio) {
+    auto cfg = esp_pthread_get_default_config();
+    cfg.thread_name = name;//线程名
+    cfg.pin_to_core = core_id;//内核ID
+    cfg.stack_size = stack;//可用堆栈大小
+    cfg.prio = prio;//线程优先级
+    return cfg;
 }
 
-extern "C" void app_main(void)
-{
-    static char InfoBuffer[512] = {0};
-    printf("Hi !\n");
+/**
+ * 初始化
+ */
+void All_init() {
+    led_init();
+}
+
+extern "C" void app_main(void) {
+    auto cfg = esp_pthread_get_default_config();
     All_init();
-    xTaskCreate(&Led_Task, "Led_Task", 512, NULL, Priority_LED, &LED_Test_Handle);
-    xTaskCreate(&AS5600_Task, "AS5600_Task", 1024, NULL, Priority_AS5600, &AS5600_Test_Handle);
-    mypwm.Set_duty(mypwm.IN1_channel, 0.5);
-    mypwm.Set_duty(mypwm.IN2_channel, 0.25);
-    mypwm.Set_duty(mypwm.IN3_channel, 0.75);
-    while (1)
-    {
-        vTaskDelay(10 / portTICK_PERIOD_MS);
-        sprintf(InfoBuffer, "AS5600 Angel=%.4f", my_as5600.Raw_angel);
-        MY_DEBUG("%s", InfoBuffer);
-        // sprintf(InfoBuffer, "ADC 1 =%.4f", myadc.Get_adc1());
-        // MY_DEBUG("%s", InfoBuffer);
-        // sprintf(InfoBuffer, "ADC 2 =%.4f", myadc.Get_adc2());
-        // MY_DEBUG("%s", InfoBuffer);
+
+    cfg = create_config("led_tack", 0, 512, Prio_LED);
+    cfg.inherit_cfg = true;
+    esp_pthread_set_cfg(&cfg);
+    std::thread led_tack(Led_thread);
+
+    while (1) {
+
+        std::stringstream ss;
+        ss << "core id: " << xPortGetCoreID()
+           << ", prio: " << uxTaskPriorityGet(nullptr)
+           << ", minimum free stack: " << uxTaskGetStackHighWaterMark(nullptr) << " bytes.";
+        ESP_LOGI(pcTaskGetName(nullptr), "%s", ss.str().c_str());
+//        MY_DEBUG("runing...");
+
+        std::this_thread::sleep_for((const std::chrono::seconds) 1);
+//        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }

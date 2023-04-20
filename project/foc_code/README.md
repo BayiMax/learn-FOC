@@ -1,52 +1,60 @@
-# Hello World Example
+| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-S2 | ESP32-S3 |
+| ----------------- | ----- | -------- | -------- | -------- | -------- |
 
-Starts a FreeRTOS task to print "Hello World".
+# Example: Blink C++ example
 
 (See the README.md file in the upper level 'examples' directory for more information about examples.)
 
+This example demonstrates usage of the `GPIO_Output` C++ class in ESP-IDF.
+
+In this example, the `sdkconfig.defaults` file sets the `CONFIG_COMPILER_CXX_EXCEPTIONS` option. 
+This enables both compile time support (`-fexceptions` compiler flag) and run-time support for C++ exception handling.
+This is necessary for the C++ APIs.
+
 ## How to use example
 
-Follow detailed instructions provided specifically for this example. 
+### Hardware Required
 
-Select the instructions depending on Espressif chip installed on your development board:
+Any ESP32 family development board.
 
-- [ESP32 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
-- [ESP32-S2 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
+Connect an LED to the corresponding pin (default is pin 4). If the board has a normal LED already, you can use the pin number to which that one is connected.
 
+Development boards with an RGB LED that only has one data line like the ESP32-C3-DevKitC-02 and ESP32-C3-DevKitM-1 will not work. In this case, please connect an external normal LED to the chosen pin.
 
-## Example folder contents
-
-The project **hello_world** contains one source file in C language [hello_world_main.c](main/hello_world_main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt` files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
+### Configure the project
 
 ```
-├── CMakeLists.txt
-├── example_test.py            Python script used for automated example testing
-├── main
-│   ├── CMakeLists.txt
-│   ├── component.mk           Component make file
-│   └── hello_world_main.c
-├── Makefile                   Makefile used by legacy GNU Make
-└── README.md                  This is the file you are currently reading
+idf.py menuconfig
 ```
 
-For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
+### Build and Flash
 
-## Troubleshooting
+```
+idf.py -p PORT flash monitor
+```
 
-* Program upload failure
+(Replace PORT with the name of the serial port.)
 
-    * Hardware connection is not correct: run `idf.py -p PORT monitor`, and reboot your board to see if there are any output logs.
-    * The baud rate for downloading is too high: lower your baud rate in the `menuconfig` menu, and try again.
+(To exit the serial monitor, type ``Ctrl-]``.)
 
-## Technical support and feedback
+See the Getting Started Guide for full steps to configure and use ESP-IDF to build projects.
 
-Please use the following feedback channels:
+## Example Output
 
-* For technical queries, go to the [esp32.com](https://esp32.com/) forum
-* For a feature request or bug report, create a [GitHub issue](https://github.com/espressif/esp-idf/issues)
+```
+...
+I (339) cpu_start: Starting scheduler.
+I (343) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+LED ON
+LED OFF
+LED ON
+LED OFF
+LED ON
+LED OFF
+LED ON
+LED OFF
+LED ON
+LED OFF
 
-We will get back to you as soon as possible.
+```
+

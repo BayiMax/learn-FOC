@@ -57,5 +57,5 @@ C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/mqtt/libmqtt.a
 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/spiffs/libspiffs.a
 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/main/libmain.a
-C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/Foc/libFoc.a
+C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/experimental_cpp_component/libexperimental_cpp_component.a
 C:/Users/Bay_Max/Desktop/Learn/FOC/project/foc_code/build/esp-idf/peripheral/libperipheral.a

@@ -6,15 +6,15 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Foc_code
-# Configurations: 
+# Project: foc_code
+# Configurations: Debug
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__Foc_code.2eelf_
+rule C_COMPILER__foc_code.2eelf_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__Foc_code.2eelf_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__Foc_code.2eelf_
+rule CXX_EXECUTABLE_LINKER__foc_code.2eelf_Debug
   command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $FLAGS $LINK_FLAGS @$RSP_FILE -o $TARGET_FILE  && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   rspfile = $RSP_FILE
@@ -43,7 +43,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER____idf_riscv_
+rule ASM_COMPILER____idf_riscv_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -53,7 +53,7 @@ rule ASM_COMPILER____idf_riscv_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_riscv_
+rule C_COMPILER____idf_riscv_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -63,8 +63,8 @@ rule C_COMPILER____idf_riscv_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_riscv_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_riscv_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -72,7 +72,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_riscv_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_ringbuf_
+rule C_COMPILER____idf_esp_ringbuf_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -82,8 +82,8 @@ rule C_COMPILER____idf_esp_ringbuf_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_ringbuf_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_ringbuf_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -91,7 +91,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_ringbuf_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_efuse_
+rule C_COMPILER____idf_efuse_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -101,8 +101,8 @@ rule C_COMPILER____idf_efuse_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_efuse_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_efuse_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -110,7 +110,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_efuse_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_driver_
+rule C_COMPILER____idf_driver_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -120,8 +120,8 @@ rule C_COMPILER____idf_driver_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_driver_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_driver_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -129,7 +129,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_driver_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_pm_
+rule C_COMPILER____idf_esp_pm_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -139,8 +139,8 @@ rule C_COMPILER____idf_esp_pm_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_pm_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_pm_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -148,7 +148,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_pm_
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER____idf_mbedtls_
+rule ASM_COMPILER____idf_mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -158,7 +158,7 @@ rule ASM_COMPILER____idf_mbedtls_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_mbedtls_
+rule C_COMPILER____idf_mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -168,8 +168,8 @@ rule C_COMPILER____idf_mbedtls_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_mbedtls_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_mbedtls_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -177,7 +177,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_mbedtls_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__mbedcrypto_
+rule C_COMPILER__mbedcrypto_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -187,8 +187,8 @@ rule C_COMPILER__mbedcrypto_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__mbedcrypto_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS @$RSP_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule CXX_STATIC_LIBRARY_LINKER__mbedcrypto_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS @$RSP_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   rspfile = $RSP_FILE
   rspfile_content = $in $LINK_PATH $LINK_LIBRARIES
@@ -198,7 +198,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedcrypto_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__mbedx509_
+rule C_COMPILER__mbedx509_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -208,8 +208,8 @@ rule C_COMPILER__mbedx509_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__mbedx509_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule CXX_STATIC_LIBRARY_LINKER__mbedx509_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -217,7 +217,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedx509_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__mbedtls_
+rule C_COMPILER__mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -227,8 +227,8 @@ rule C_COMPILER__mbedtls_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__mbedtls_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule CXX_STATIC_LIBRARY_LINKER__mbedtls_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -236,7 +236,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedtls_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_app_format_
+rule C_COMPILER____idf_esp_app_format_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -246,8 +246,8 @@ rule C_COMPILER____idf_esp_app_format_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_app_format_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_app_format_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -255,7 +255,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_app_format_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_bootloader_support_
+rule C_COMPILER____idf_bootloader_support_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -265,8 +265,8 @@ rule C_COMPILER____idf_bootloader_support_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_bootloader_support_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_bootloader_support_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -274,7 +274,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_bootloader_support_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_partition_
+rule C_COMPILER____idf_esp_partition_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -284,8 +284,8 @@ rule C_COMPILER____idf_esp_partition_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_partition_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_partition_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -293,7 +293,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_partition_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_app_update_
+rule C_COMPILER____idf_app_update_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -303,8 +303,8 @@ rule C_COMPILER____idf_app_update_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_app_update_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_app_update_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -312,7 +312,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_app_update_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_spi_flash_
+rule C_COMPILER____idf_spi_flash_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -322,8 +322,8 @@ rule C_COMPILER____idf_spi_flash_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_spi_flash_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_spi_flash_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -331,7 +331,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_spi_flash_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_pthread_
+rule C_COMPILER____idf_pthread_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -341,8 +341,8 @@ rule C_COMPILER____idf_pthread_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_pthread_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_pthread_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -350,7 +350,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_pthread_
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER____idf_esp_system_
+rule ASM_COMPILER____idf_esp_system_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -360,7 +360,7 @@ rule ASM_COMPILER____idf_esp_system_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_system_
+rule C_COMPILER____idf_esp_system_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -370,8 +370,8 @@ rule C_COMPILER____idf_esp_system_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_system_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_system_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -379,7 +379,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_system_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_rom_
+rule C_COMPILER____idf_esp_rom_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -389,8 +389,8 @@ rule C_COMPILER____idf_esp_rom_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_rom_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_rom_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -398,7 +398,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_rom_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_hal_
+rule C_COMPILER____idf_hal_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -408,8 +408,8 @@ rule C_COMPILER____idf_hal_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_hal_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_hal_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -417,7 +417,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_hal_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_log_
+rule C_COMPILER____idf_log_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -427,8 +427,8 @@ rule C_COMPILER____idf_log_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_log_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_log_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -436,7 +436,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_log_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_heap_
+rule C_COMPILER____idf_heap_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -446,8 +446,8 @@ rule C_COMPILER____idf_heap_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_heap_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_heap_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -455,7 +455,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_heap_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_soc_
+rule C_COMPILER____idf_soc_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -465,8 +465,8 @@ rule C_COMPILER____idf_soc_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_soc_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_soc_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -474,7 +474,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_soc_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_hw_support_
+rule C_COMPILER____idf_esp_hw_support_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -484,8 +484,8 @@ rule C_COMPILER____idf_esp_hw_support_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_hw_support_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_hw_support_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -493,7 +493,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_hw_support_
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER____idf_freertos_
+rule ASM_COMPILER____idf_freertos_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -503,7 +503,7 @@ rule ASM_COMPILER____idf_freertos_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_freertos_
+rule C_COMPILER____idf_freertos_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -513,8 +513,8 @@ rule C_COMPILER____idf_freertos_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_freertos_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_freertos_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -522,7 +522,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_freertos_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_newlib_
+rule C_COMPILER____idf_newlib_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -532,8 +532,8 @@ rule C_COMPILER____idf_newlib_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_newlib_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_newlib_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -541,7 +541,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_newlib_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER____idf_cxx_
+rule CXX_COMPILER____idf_cxx_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -551,8 +551,8 @@ rule CXX_COMPILER____idf_cxx_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_cxx_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_cxx_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -560,7 +560,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_cxx_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_common_
+rule C_COMPILER____idf_esp_common_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -570,8 +570,8 @@ rule C_COMPILER____idf_esp_common_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_common_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_common_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -579,7 +579,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_common_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_timer_
+rule C_COMPILER____idf_esp_timer_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -589,8 +589,8 @@ rule C_COMPILER____idf_esp_timer_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_timer_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_timer_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -598,7 +598,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_timer_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_app_trace_
+rule C_COMPILER____idf_app_trace_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -608,8 +608,8 @@ rule C_COMPILER____idf_app_trace_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_app_trace_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_app_trace_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -617,7 +617,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_app_trace_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_event_
+rule C_COMPILER____idf_esp_event_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -627,8 +627,8 @@ rule C_COMPILER____idf_esp_event_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_event_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_event_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -636,7 +636,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_event_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER____idf_nvs_flash_
+rule CXX_COMPILER____idf_nvs_flash_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -646,8 +646,8 @@ rule CXX_COMPILER____idf_nvs_flash_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_nvs_flash_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_nvs_flash_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -655,7 +655,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_nvs_flash_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_phy_
+rule C_COMPILER____idf_esp_phy_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -665,8 +665,8 @@ rule C_COMPILER____idf_esp_phy_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_phy_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_phy_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -674,7 +674,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_phy_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_vfs_
+rule C_COMPILER____idf_vfs_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -684,8 +684,8 @@ rule C_COMPILER____idf_vfs_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_vfs_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_vfs_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -693,7 +693,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_vfs_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_lwip_
+rule C_COMPILER____idf_lwip_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -703,8 +703,8 @@ rule C_COMPILER____idf_lwip_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_lwip_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_lwip_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -712,7 +712,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_lwip_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_netif_
+rule C_COMPILER____idf_esp_netif_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -722,8 +722,8 @@ rule C_COMPILER____idf_esp_netif_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_netif_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_netif_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -731,7 +731,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_netif_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_wpa_supplicant_
+rule C_COMPILER____idf_wpa_supplicant_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -741,8 +741,8 @@ rule C_COMPILER____idf_wpa_supplicant_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_wpa_supplicant_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS @$RSP_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_wpa_supplicant_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS @$RSP_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   rspfile = $RSP_FILE
   rspfile_content = $in $LINK_PATH $LINK_LIBRARIES
@@ -752,7 +752,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wpa_supplicant_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_wifi_
+rule C_COMPILER____idf_esp_wifi_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -762,8 +762,8 @@ rule C_COMPILER____idf_esp_wifi_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_wifi_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_wifi_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -771,7 +771,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_wifi_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_unity_
+rule C_COMPILER____idf_unity_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -781,8 +781,8 @@ rule C_COMPILER____idf_unity_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_unity_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_unity_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -790,7 +790,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_unity_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_cmock_
+rule C_COMPILER____idf_cmock_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -800,8 +800,8 @@ rule C_COMPILER____idf_cmock_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_cmock_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_cmock_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -809,7 +809,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_cmock_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_console_
+rule C_COMPILER____idf_console_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -819,8 +819,8 @@ rule C_COMPILER____idf_console_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_console_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_console_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -828,7 +828,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_console_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_http_parser_
+rule C_COMPILER____idf_http_parser_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -838,8 +838,8 @@ rule C_COMPILER____idf_http_parser_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_http_parser_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_http_parser_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -847,7 +847,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_http_parser_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp-tls_
+rule C_COMPILER____idf_esp-tls_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -857,8 +857,8 @@ rule C_COMPILER____idf_esp-tls_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp-tls_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp-tls_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -866,7 +866,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp-tls_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_adc_
+rule C_COMPILER____idf_esp_adc_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -876,8 +876,8 @@ rule C_COMPILER____idf_esp_adc_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_adc_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_adc_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -885,7 +885,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_adc_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_eth_
+rule C_COMPILER____idf_esp_eth_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -895,8 +895,8 @@ rule C_COMPILER____idf_esp_eth_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_eth_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_eth_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -904,7 +904,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_eth_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_gdbstub_
+rule C_COMPILER____idf_esp_gdbstub_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -914,8 +914,8 @@ rule C_COMPILER____idf_esp_gdbstub_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_gdbstub_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_gdbstub_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -923,7 +923,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_gdbstub_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_hid_
+rule C_COMPILER____idf_esp_hid_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -933,8 +933,8 @@ rule C_COMPILER____idf_esp_hid_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_hid_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_hid_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -942,7 +942,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_hid_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_tcp_transport_
+rule C_COMPILER____idf_tcp_transport_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -952,8 +952,8 @@ rule C_COMPILER____idf_tcp_transport_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_tcp_transport_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_tcp_transport_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -961,7 +961,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_tcp_transport_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_http_client_
+rule C_COMPILER____idf_esp_http_client_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -971,8 +971,8 @@ rule C_COMPILER____idf_esp_http_client_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_http_client_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_http_client_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -980,7 +980,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_http_client_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_http_server_
+rule C_COMPILER____idf_esp_http_server_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -990,8 +990,8 @@ rule C_COMPILER____idf_esp_http_server_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_http_server_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_http_server_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -999,7 +999,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_http_server_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_https_ota_
+rule C_COMPILER____idf_esp_https_ota_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1009,8 +1009,8 @@ rule C_COMPILER____idf_esp_https_ota_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_https_ota_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_https_ota_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1018,7 +1018,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_https_ota_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_lcd_
+rule C_COMPILER____idf_esp_lcd_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1028,8 +1028,8 @@ rule C_COMPILER____idf_esp_lcd_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_lcd_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_lcd_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1037,7 +1037,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_lcd_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_protobuf-c_
+rule C_COMPILER____idf_protobuf-c_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1047,8 +1047,8 @@ rule C_COMPILER____idf_protobuf-c_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_protobuf-c_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_protobuf-c_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1056,7 +1056,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_protobuf-c_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_protocomm_
+rule C_COMPILER____idf_protocomm_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1066,8 +1066,8 @@ rule C_COMPILER____idf_protocomm_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_protocomm_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_protocomm_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1075,7 +1075,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_protocomm_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_esp_local_ctrl_
+rule C_COMPILER____idf_esp_local_ctrl_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1085,8 +1085,8 @@ rule C_COMPILER____idf_esp_local_ctrl_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_esp_local_ctrl_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_esp_local_ctrl_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1094,7 +1094,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_local_ctrl_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_espcoredump_
+rule C_COMPILER____idf_espcoredump_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1104,8 +1104,8 @@ rule C_COMPILER____idf_espcoredump_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_espcoredump_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_espcoredump_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1113,7 +1113,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_espcoredump_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER____idf_wear_levelling_
+rule CXX_COMPILER____idf_wear_levelling_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1123,8 +1123,8 @@ rule CXX_COMPILER____idf_wear_levelling_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_wear_levelling_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_wear_levelling_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1132,7 +1132,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wear_levelling_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_sdmmc_
+rule C_COMPILER____idf_sdmmc_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1142,8 +1142,8 @@ rule C_COMPILER____idf_sdmmc_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_sdmmc_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_sdmmc_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1151,7 +1151,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_sdmmc_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_fatfs_
+rule C_COMPILER____idf_fatfs_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1161,8 +1161,8 @@ rule C_COMPILER____idf_fatfs_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_fatfs_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_fatfs_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1170,7 +1170,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_fatfs_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_json_
+rule C_COMPILER____idf_json_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1180,8 +1180,8 @@ rule C_COMPILER____idf_json_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_json_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_json_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1189,7 +1189,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_json_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_mqtt_
+rule C_COMPILER____idf_mqtt_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1199,8 +1199,8 @@ rule C_COMPILER____idf_mqtt_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_mqtt_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_mqtt_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1208,7 +1208,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_mqtt_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_spiffs_
+rule C_COMPILER____idf_spiffs_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1218,8 +1218,8 @@ rule C_COMPILER____idf_spiffs_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_spiffs_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_spiffs_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1227,7 +1227,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_spiffs_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_wifi_provisioning_
+rule C_COMPILER____idf_wifi_provisioning_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1237,8 +1237,8 @@ rule C_COMPILER____idf_wifi_provisioning_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1246,7 +1246,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER____idf_main_
+rule CXX_COMPILER____idf_main_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1256,46 +1256,46 @@ rule CXX_COMPILER____idf_main_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_main_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_main_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER____idf_Foc_
+rule CXX_COMPILER____idf_experimental_cpp_component_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_Foc_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_experimental_cpp_component_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
 
 #############################################
-# Rule for compiling C files.
+# Rule for compiling CXX files.
 
-rule C_COMPILER____idf_peripheral_
+rule CXX_COMPILER____idf_peripheral_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
+  command = ccache D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
 
 
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_peripheral_
-  command = cmd.exe /C "$PRE_LINK && D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
+rule C_STATIC_LIBRARY_LINKER____idf_peripheral_Debug
+  command = cmd.exe /C "$PRE_LINK && "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\esp32IDF\core_501\tools\riscv32-esp-elf\esp-2022r1-11.2.0\riscv32-esp-elf\bin\riscv32-esp-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -1304,7 +1304,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_peripheral_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\esp32IDF\core_501\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code -BC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build
+  command = "D:\CLion\Core\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code -BC:\Users\Bay_Max\Desktop\Learn\FOC\project\foc_code\build
   description = Re-running CMake...
   generator = 1
 
@@ -1313,7 +1313,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = D:\esp32IDF\core_501\tools\ninja\1.10.2\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = "D:\CLion\Core\CLion 2022.3.3\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -1321,6 +1321,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = D:\esp32IDF\core_501\tools\ninja\1.10.2\ninja.exe -t targets
+  command = "D:\CLion\Core\CLion 2022.3.3\bin\ninja\win\x64\ninja.exe" -t targets
   description = All primary targets available:
 

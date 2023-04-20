@@ -1,7 +1,0 @@
-CMake Error at CMakeLists.txt:5 (include):
-  include could not find requested file:
-
-    D:\esp32IDF\core_501\frameworks\esp-idf-v5.0.1/frameworks/esp-idf-v5.0.1/tools/cmake/project.cmake
-
-
-ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
+  <component name="CidrRootsConfiguration">
+    <libraryRoots>
+      <file path="D:/esp32IDF/core_501/frameworks/esp-idf-v5.0.1" />
+    </libraryRoots>
+  </component>
 </project>

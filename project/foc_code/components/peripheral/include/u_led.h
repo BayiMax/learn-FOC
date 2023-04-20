@@ -3,14 +3,15 @@
 
 #include "main.h"
 
-typedef struct u_led
-{
-  /* data */
-  void (*set_Led)(float value);
-} _U_LED;
+typedef struct u_led {
+    /* data */
+    void (*set_Led)(float value);
+} U_LED;
 
-extern _U_LED myled;
+extern U_LED myled;
 
-void led_init(void);
-void Led_Task(void *pvParameters);
+void led_init();
+
+void Led_thread();
+
 #endif /* U_LED_H */
